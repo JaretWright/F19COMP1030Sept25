@@ -9,6 +9,8 @@ public class MethodExample {
         //method names usually contain some type of verb or action and start
         //with lower case letters
         printingWithNoArguments();
+
+        printingWithArguments("Hello", 5);
     }
 
     /**
@@ -26,7 +28,12 @@ public class MethodExample {
      */
     public static void printingWithArguments(String message, int timesToRepeat)
     {
-        System.out.printf("%s%n", message);
+        int counter = 1;
+        while (counter <= timesToRepeat )
+        {
+            System.out.printf("inside 'printingWithArguments' the message is: %s%n", message);
+            counter = counter + 1;
+        }
     }
 
 }
