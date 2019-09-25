@@ -21,5 +21,12 @@ public class MethodExample {
         System.out.printf("Print statement from method 'printingWithNoArguments'%n");
     }
 
+    /**
+     * This method will receive arguments and display them to the screen
+     */
+    public static void printingWithArguments(String message, int timesToRepeat)
+    {
+        System.out.printf("%s%n", message);
+    }
 
 }
